@@ -294,7 +294,7 @@ The advanced agent fetched 2 cities in parallel and returned a natural-language 
 
 ### Parallel execution
 
-Produced consistent and measurable speedups. Across all three test queries, parallel execution was 2.1x to 3.2x faster than sequential. The speedup grows with the number of independent tool calls, which aligns with the expectation that for N independent network requests, the ideal speedup is N×. The observed ratios are slightly below the theoretical ceiling because of thread-pool overhead but they are still good.
+Produced consistent and measurable speedups. Across all three test queries, parallel execution was 2.1x to 3.2x (varies from ne run to the other) faster than sequential. The speedup grows with the number of independent tool calls, which aligns with the expectation that for N independent network requests, the ideal speedup is N×. The observed ratios are slightly below the theoretical ceiling because of thread-pool overhead but they are still good.
 
 ### Multi-step reasoning
 
