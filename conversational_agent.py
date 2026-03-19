@@ -1,6 +1,3 @@
-#1 2 3 5 working 6 worked before and now (19/3 2:42) partially working
-#4 not working
-
 import os
 import json
 from pyexpat.errors import messages
