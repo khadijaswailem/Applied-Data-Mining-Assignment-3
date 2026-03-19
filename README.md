@@ -184,39 +184,40 @@ Tool calls requested:
   get_current_weather({"location":"Riyadh, Saudi Arabia"})
   get_current_weather({"location":"London, UK"})
 
-Sequential time : 0.5348s
-Parallel time   : 0.2545s
-Speedup         : 2.10x
+Sequential time : 0.6477s
+Parallel time   : 0.1810s
+Speedup         : 3.58x
 
 Final Answer:
-Cairo — Partly cloudy, 22°C, 38% humidity.
-Riyadh — Overcast, 24.2°C, 36% humidity.
-London — Sunny, 17.1°C, 36% humidity.
+The current weather in Cairo, Riyadh, and London is:
+
+Cairo, Egypt: Partly cloudy, 22.3°C (72.1°F), humidity 33%, wind 35.6 km/h.
+
+Riyadh, Saudi Arabia: Partly cloudy, 23.3°C (73.9°F), humidity 38%, wind 31.7 km/h.
+
+London, UK: Sunny, 17.0°C (62.6°F), humidity 32%, wind 14.4 km/h.
 ```
 
 **Query: Which city is warmer right now: Paris, Rome, or Berlin?**
 
 ```
-Sequential time : 0.5159s
-Parallel time   : 0.1767s
-Speedup         : 2.92x
+Sequential time : 1.0600s
+Parallel time   : 0.3500s
+Speedup         : 3.03x
 
 Final Answer:
-Rome is warmer than Paris and Berlin, with a current temperature of 18.3°C (64.9°F).
+Based on the function calls, we can see that the current temperature in Paris is 17.0°C, in Rome is 18.3°C, and in Berlin is 16.1°C. Therefore, Rome is the warmest city.
 ```
 
-**Query: Compare weather in Alexandria, Aswan, and Dubai.**
+**Query: Give me a short comparison of the weather in Alexandria, Aswan, and Dubai.**
 
 ```
-Sequential time : 0.5754s
-Parallel time   : 0.1789s
-Speedup         : 3.22x
+Sequential time : 0.5285s
+Parallel time   : 0.1670s
+Speedup         : 3.16x
 
 Final Answer:
-Alexandria — Partly cloudy, 19.3°C, 64% humidity.
-Aswan — Sunny, 27.5°C, 15% humidity.
-Dubai — Sunny, 24.5°C, 57% humidity.
-Aswan is the warmest; Alexandria is the coolest. Aswan has the driest air.
+The current weather in Alexandria is partly cloudy with a temperature of 19.2°C (66.6°F), while Aswan is sunny with a temperature of 25.1°C (77.1°F). Dubai is also sunny with a temperature of 39.7°C (103.5°F). The humidity levels are 68% in Alexandria, 22% in Aswan, and 19% in Dubai.
 ```
 
 ---
